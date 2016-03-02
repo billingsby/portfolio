@@ -1,0 +1,42 @@
+.body {
+ 
+}
+
+
+.video {
+  background: url('../images/profile-color-left.jpg') no-repeat;
+
+
+}
+
+.web {
+  background: url('../images/profile-color-right.jpg')  no-repeat;
+  float:right;
+}
+
+
+.web, .video {
+  width:50%;
+  display: inline-block;
+  padding: 0;
+  overflow: hidden;
+/*height: 100%;*/
+  background-size: cover;
+  -webkit-filter: grayscale(100%);
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.web:hover, .video:hover {
+  -webkit-filter: grayscale(0%);
+}
+
+.work-title {
+  margin: 50% 0;
+  padding: 0;
+ /* overflow: hidden;*/
+}
+
