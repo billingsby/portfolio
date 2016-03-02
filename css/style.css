@@ -1,28 +1,91 @@
-.body {
- 
+html {
+  box-sizing: border-box;
+  height: 100%;
+  
+}
+
+body {
+  background-color: #333333;
+  height: 100%;
+  font-family: 'Source Sans Pro', sans-serif;
+
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
+.container-fluid, .landing-bg, .left, .right {
+  height: 100%;
+  padding: 0;
+}
+
+.landing-bg {
+  background: url('../images/profile_image.png') no-repeat;
+  background-size: auto 400px;
+  background-color: #333333;
+  background-position: center;
+}
+
+.header {
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  z-index: 1;
+}
+
+.first-name {
+  width: 50%; 
+  border-bottom: 1px solid #fff; 
+  line-height: 0.1em;
+  margin: 10px auto 20px;
+
+}
+
+.first-name span {
+  background: #000; 
+  padding:0 10px; 
+
+}
+
+.title {
+  background-color: #000;
+  font-family: 'Roboto Slab', serif;
+  color: #fff;
+  border-radius: 4px;
+  padding: 0;
+  padding-bottom: 1em;
+
+}
+.title h1 {
+  font-weight: 700;
+  margin:0;
+  padding-top: .75em;
+  margin-bottom: -.2em;
 }
 
 
 .video {
-  background: url('../images/profile-color-left.jpg') no-repeat;
-
-
+  margin-left: 0;   
+  margin-right: -100%;
 }
 
 .web {
-  background: url('../images/profile-color-right.jpg')  no-repeat;
-  float:right;
+  /*background: url('../images/profile_04.png')  no-repeat;*/
+  margin-left: 50%;   
+  margin-right: -100%;
 }
 
-
 .web, .video {
-  width:50%;
-  display: inline-block;
+  float: left;
+  height:100%;
+  width: 100%;
   padding: 0;
-  overflow: hidden;
-/*height: 100%;*/
-  background-size: cover;
-  -webkit-filter: grayscale(100%);
+  margin:0;
+  display: inline-block;
+
+  
   -webkit-transition: all 1s ease;
   -moz-transition: all 1s ease;
   -o-transition: all 1s ease;
@@ -30,11 +93,19 @@
   transition: all 1s ease;
 }
 
-.web:hover, .video:hover {
-  -webkit-filter: grayscale(0%);
+.web:hover  {
+  background-color: rgba(158,185,195, .5);
+
+}
+
+.video:hover {
+background-color: rgba(187,220,232, .5);
 }
 
 .work-title {
+  position: relative;
+  font-size: 3vw;
+  color: white;
   margin: 50% 0;
   padding: 0;
  /* overflow: hidden;*/
