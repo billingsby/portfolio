@@ -1,108 +1,94 @@
 html {
   box-sizing: border-box;
   height: 100%;
-  
 }
 
 body {
-  background-color: #333333;
+  background-color: white;
   height: 100%;
   font-family: 'Source Sans Pro', sans-serif;
-  color: white;
-
+  color: #333333;
 }
 
 *, *:before, *:after {
   box-sizing: inherit;
 }
 
+.clear-fix {
+  clear: both;
+}
 
-.container-fluid, .landing-bg, .left, .right {
-  height: 100%;
+
+
+.jumbotron {
   padding: 0;
+  margin:0;
+}
+
+#header {
+  position: absolute;
+  z-index: 999;
 }
 
 .landing-bg {
   background: url('../images/profile_image.png') no-repeat;
-  background-size: auto 400px;
-  background-color: #333333;
+  background-size: auto 40vw;
   background-position: center;
 }
 
-.header {
-  position: absolute;
-  top: 0px;
-  width: 100%;
-  z-index: 1;
-  display: inline-block;
+
+.logo-container, .social-container {
+  padding: 0;
 }
 
 .logo {
-  background-color: #9EB9C3;
+  background-color: #fff;
   border-radius: 4px;
-  width: 9em;
+  width: 9vw;
   margin: 0;
   margin-top: -4px;
-
 }
 
 .logo img {
-  width: 8em;
-  height: 8em;
-  padding: 1em;
-  margin: 4px 0;
-  
-}
-
-
-
-.video {
-  margin-left: 0;   
-  margin-right: -100%;
-}
-
-.web {
-  /*background: url('../images/profile_04.png')  no-repeat;*/
-  margin-left: 50%;   
-  margin-right: -100%;
+  width: 90%;
+  height: 90%;
+  padding: 1vw;
+  margin: .25vw 0;
 }
 
 .web, .video {
   float: left;
   height:100%;
   width: 100%;
-  padding: 0;
-  margin:0;
+  padding: 0 auto;
+  margin:0 auto;
   display: inline-block;
+}
 
+
+.work-title {
   
+  font-size: 3vw;
+  color: #333333;
+  margin: 50% 3em; 
+  padding: .5em 0;
+  border: 1px solid #fff;
   -webkit-transition: all 1s ease;
   -moz-transition: all 1s ease;
   -o-transition: all 1s ease;
   -ms-transition: all 1s ease;
   transition: all 1s ease;
-}
-
-.web:hover  {
-  background-color: rgba(158,185,195, .5);
-
-}
-
-.video:hover {
-background-color: rgba(187,220,232, .5);
-}
-
-.work-title {
-  position: relative;
-  font-size: 3vw;
-  color: white;
-  margin: 50% 0;
-  padding: 0;
+ 
 }
 
 .work-title small {
-  color: white;
+  color: #333333;
   font-size: 1.5vw;
+}
+
+.video:hover .work-title, .web:hover .work-title {
+   border: 1px solid #333333;
+  border-radius: 3px;
 }
 
 /* Social Icons */
@@ -110,18 +96,18 @@ background-color: rgba(187,220,232, .5);
   width: 100%;
   height: 5rem;
   text-align: center;
-
 }
 
 .social a {
-  color: #cccccc;
+  color: #fff;
 }
 
 .social .icons > li {
   width: 4rem;
   height: 4rem;
-  padding: 1.2em 0;
+  padding: 1.2vw 2vw;
   font-size: 2.5vw;
+
 }
 
 .social .icons > li:hover {
@@ -138,7 +124,7 @@ background-color: rgba(187,220,232, .5);
     color: #3f729b;
 }
 .social .github:hover {
-    color: #fff;
+    color: #000;
 }
 .contact .content .copy {
     font-size: 0.9rem;
@@ -147,11 +133,45 @@ background-color: rgba(187,220,232, .5);
     margin: 0 auto;
 }
 
-footer {
-  position: absolute;
-  bottom: 0px;
+/*  Footer  */
+.footer .copy h5 {
+  font-size: 1vw;
+}
+
+/*  Video Web Pages*/
+#myCarousel {
   width: 100%;
-  z-index: 1;
+}
+
+.carousel-caption {
+  text-align: left;
+}
+
+#myCarousel .carousel-caption p{
+  font-size: 1.5vw;
+}
+
+#myCarousel h1 {
+  font-weight: 900;
+}
+
+#portfolio {
+  width: 100%;
+  padding:0;
+  background: #bebebe url('../images/portfolio-bg.jpg') repeat-x;
+  /*position: relative;*/
+  border-bottom: 1px solid #891619;
+}
+
+#portfolio h2 {
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 2em 0;
+}
+
+#portfolio #player {
+  width: 800px;
+  height: 450px;
 }
 
 
