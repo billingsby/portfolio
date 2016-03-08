@@ -7,7 +7,7 @@
     
     <title>Mark Billingsby || Editor/Web Developer</title>
 
-    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="shortcut icon" href="../favicon.ico">
     <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,900' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
@@ -51,7 +51,7 @@
 
 
 <div class="jumbotron">
-    <div id="myCarousel" class = "carousel slide">
+    <div id="myCarousel" class="carousel slide">
       <ul class="carousel-indicators">
         <li data-target = "#myCarousel" data-slide-to = "0" class="active"></li>
         <li data-target = "#myCarousel" data-slide-to = "1" class=""></li>
@@ -87,10 +87,10 @@
       </div> 
 
       <a class="carousel-control left" href="#myCarousel" data-slide = "prev">
-        <span class="icon-prev"></span>
+        <span><i class="fa fa-chevron-circle-left fa-2x"></i></span>
       </a> 
       <a class="carousel-control right" href="#myCarousel" data-slide = "next">
-        <span class="icon-next"></span>
+        <span><i class="fa fa-chevron-circle-right fa-2x"></i></span>
       </a>   
     </div>
   </div>
@@ -106,74 +106,121 @@
         </div>
         <div class="video-wrapper">
           <div class="embed-responsive embed-responsive-16by9">
-            <iframe src="https://player.vimeo.com/video/146081659"></iframe>
+            <iframe id="video" src="https://player.vimeo.com/video/146081659"></iframe>
           </div>
         </div>
       </div>
     </div>
 
     <div class="container">
-    <div class="row portfolio-items">
-      <div class="col-md-4  portfolio-item">
-        <img class="img-responsive" src="../images/paradox.jpg">
+    <div class="row portfolio-items" id="hover-effect">
+      <div class="col-xs-12 col-md-4  portfolio-item">
+        <a src="https://player.vimeo.com/video/157813470"><img class="img-responsive" src="../images/paradox.jpg">
+        </a>
         <div class="portfolio-description">
-          <h2>Hotel Paradox</h2>
-          <p>Commercial / Web</p>
+            <a href="#" class="expand">
+              <i class="fa fa-play-circle-o fa-3x"></i>
+              <h2>Hotel Paradox</h2>
+              <p>Commercial / Web</p>
+            </a>
+            <a class="close-overlay hidden">x</a>
         </div>
       </div>
-      <div class="col-md-4 portfolio-item">
-        <img class="img-responsive " src="../images/crossfit.jpg">
+      <div class="col-xs-12 col-md-4 portfolio-item">
+        <a src="https://player.vimeo.com/video/157812659">
+        <img class="img-responsive" src="../images/crossfit.jpg">
+        </a>
+        <div class="portfolio-description">
+            <a href="#" class="expand">
+              <i class="fa fa-play-circle-o fa-3x"></i>
+              <h2>2015 CrossFit Games</h2>
+              <p>Broadcast / ESPN</p>
+            </a>
+            <a class="close-overlay hidden">x</a>
+        </div>
       </div>
-      <div class="col-md-4 portfolio-item">
+      <div class="col-xs-12 col-md-4 portfolio-item">
+        <a src="https://player.vimeo.com/video/157813474">
         <img class="img-responsive" src="../images/tylerfox.jpg">
+        </a>
+        <div class="portfolio-description">
+            <a href="#" class="expand">
+              <i class="fa fa-play-circle-o fa-3x"></i>
+              <h2>Tyler Fox Feature</h2>
+              <p>Promo / Web</p>
+            </a>
+            <a class="close-overlay hidden">x</a>
+        </div>
       </div>
     </div>
     
     
-    <div class="row portfolio-items">
-      <div class="col-md-4 portfolio-item">
+    <div class="row portfolio-items" id="hover-effect">
+      <div class="col-xs-12 col-md-4 portfolio-item">
+        <a src="https://player.vimeo.com/video/157813494">
         <img class="img-responsive" src="../images/actuate.jpg">
+        </a>
+        <div class="portfolio-description">
+            <a href="#" class="expand">
+              <i class="fa fa-play-circle-o fa-3x"></i>
+              <h2>Actuate BIRT</h2>
+              <p>Marketing / Web</p>
+            </a>
+            <a class="close-overlay hidden">x</a>
+        </div>
       </div>
-      <div class="col-md-4 portfolio-item">
+      <div class="col-xs-12 col-md-4 portfolio-item">
+        <a src="https://player.vimeo.com/video/157813456">
         <img class="img-responsive " src="../images/Sandisk.jpg">
+        </a>
+        <div class="portfolio-description">
+            <a href="#" class="expand">
+              <i class="fa fa-play-circle-o fa-3x"></i>
+              <h2>SanDisk</h2>
+              <p>Commercial / Web</p>
+            </a>
+            <a class="close-overlay hidden">x</a>
+        </div>
       </div>
-      <div class="col-md-4 portfolio-item">
+      <div class="col-xs-12 col-md-4 portfolio-item">
+        <a src="https://player.vimeo.com/video/157813481">
         <img class="img-responsive" src="../images/warriors.jpg">
+        </a>
+        <div class="portfolio-description">
+            <a href="#" class="expand">
+              <i class="fa fa-play-circle-o fa-3x"></i>
+              <h2>Santa Cruz Warriors</h2>
+              <p>Commercial / Web</p>
+            </a>
+            <a class="close-overlay hidden">x</a>
+        </div>
       </div>
     </div>
     </div>
   </div>
 
-  <div class="container">
-    <div id="myCarousel" class = "carousel slide">
-      <ul class="carousel-indicators">
-        <li data-target = "#myCarousel" data-slide-to = "0" class="active"></li>
-        <li data-target = "#myCarousel" data-slide-to = "1" class=""></li>
-        <li data-target = "#myCarousel" data-slide-to = "2" class=""></li>
-      </ul>
-
-      <div class="carousel-inner">
-
-        <div class="insta-item">
-          <img src="../images/control-room.jpg" alt = "Video Professional" class="img-responsive">
-          <div class="carousel-caption slide-details">
-            <h1>I am<br>a Video Pro</h1>
-            <p>With more than a decade of experience working for broadcast, commercial, and corporate clients, I have a passion for creative storytelling. My career has led me to a lot of cool places and many great friendships.</p>
-          </div>
+  <div class="container instaSlider">
+    <div class ="carousel slide" id="insta-wrapper">
+  
+      <div class="carousel-inner" id="insta-thumbs" >
+        <div class="item active" >
+          <div class="row" id="insta-items"></div>
+        </div>
+        <div class="item">
+          <div class="row" id="insta-items-2"></div>
+        </div>
+         <div class="item">
+          <div class="row" id="insta-items-3"></div>
         </div>
 
-        
-
-      </div> 
-
-      <a class="carousel-control left" href="#myCarousel" data-slide = "prev">
-        <span class="icon-prev"></span>
-      </a> 
-      <a class="carousel-control right" href="#myCarousel" data-slide = "next">
-        <span class="icon-next"></span>
-      </a>   
+        <a class="carousel-control left" href="#insta-wrapper" data-slide = "prev">
+          <span ><i class="fa fa-chevron-circle-left fa-2x"></i></span>
+        </a> 
+        <a class="carousel-control right" href="#insta-wrapper" data-slide = "next">
+          <span><i class="fa fa-chevron-circle-right fa-2x"></i></span>
+        </a>   
+      </div>
     </div>
-  </div>
   </div>
 
 
@@ -189,7 +236,7 @@
         <h5>&#169;2016 Mark Billingsby</h5>
       </span>
     </footer>
-  </div>
+ 
 
 
 
@@ -198,6 +245,7 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+   <script src="../js/modernizr.js"></script>
   <script type="text/javascript" src="../js/app.js"></script>
 
 
