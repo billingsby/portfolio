@@ -42,7 +42,6 @@ function getInsta() {
   //   $('.search-results').append(errorElem);
   });
 };
-
 /*! Reloads page on every visit */
 function Reload() {
 try {
