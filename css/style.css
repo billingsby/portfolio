@@ -186,6 +186,7 @@ body {
   padding:0;
   background: #bebebe url('../images/portfolio-bg.jpg') repeat-x;
   border-bottom: 1px solid #333333;
+  padding-bottom: 3em;
 }
 
 .section-title > h3 {
@@ -215,7 +216,7 @@ body {
 
 }
 
-#portfolio .container {
+#portfolio .container{
   margin: 3em auto;
 }
 #portfolio .portfolio-item {
@@ -276,6 +277,10 @@ a.expand {
   margin-left: 38%;
   padding-bottom: .25em;
   color: #145D85;
+}
+
+.portfolio-items .fa-play-circle-o:hover {
+  color: white;
 }
 
 #hover-effect .portfolio-description {
@@ -346,10 +351,24 @@ a.expand {
   color: white;
 }
 
+.about p {
+  padding-right: 10em;
+  color: white;
+}
+
+.about h2 {
+  color: white;
+  margin-top: 8.3em;
+}
 .about .line {
   border-top: 3px solid white;
 }
 
+.about .years-description {
+  padding-left: 3em;
+
+}
+
 .about #experience {
-  padding-left: 6em;
+  padding-left: 10em;
 }
