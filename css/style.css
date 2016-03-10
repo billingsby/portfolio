@@ -137,10 +137,6 @@ body {
     margin: 0 auto;
 }
 
-/*  Footer  */
-.footer .copy h5 {
-  font-size: 1vw;
-}
 
 /*  Video Web Pages*/
 #myCarousel {
@@ -190,7 +186,7 @@ body {
 }
 
 .section-title > h3 {
-  font-weight: 700;
+  font-weight: 400;
   font-size: 2vw;
   text-transform: uppercase;
   color: #333333;
@@ -338,7 +334,7 @@ a.expand {
   width: 100%;
   margin: 0;
   padding: 0;
-  color: #777777;
+  color: white;
 }
 
 .about .section-title h3 {
@@ -353,22 +349,90 @@ a.expand {
 
 .about p {
   padding-right: 10em;
-  color: white;
+
 }
 
-.about h2 {
-  color: white;
-  margin-top: 8.3em;
+.about #experience {
+  padding-right: 2em;
+  margin-bottom: 5em;
 }
+
+.about #experience h3 {
+  color: #777777;
+  font-size: 2vw;
+  padding-left: 5em;
+
+}
+
 .about .line {
   border-top: 3px solid white;
 }
 
 .about .years-description {
-  padding-left: 3em;
+  margin: 0 auto;
 
 }
 
 .about #experience {
-  padding-left: 10em;
+  padding-left: 5em;
 }
+
+.about #breakdown {
+  padding-left: 5em;
+  margin-top: 3em;
+}
+
+.about .years h1 {
+  font-size: 12vw;
+  margin-bottom:0;
+}
+
+
+
+/* Contact Form */
+
+.well {
+  background-color: transparent;
+  border: 0;
+  margin: 0;
+  padding: 2em 10em 0 0;
+  margin-bottom: 5em;
+  
+}
+#success_message { 
+  display: none;
+}  
+
+.btn-warning {
+  background-color: #145D85;
+  border: 0;
+}
+
+.btn-warning:hover {
+  background-color: #00A6F2;
+}
+
+/*  Footer  */
+
+.footer {
+  background-color: #000;
+  padding: 0;
+  margin: 0;
+}
+
+.footer .copy h5 {
+  color: white;
+  font-size: 1vw;
+  margin: 0;
+  padding-top: 2em;
+}
+
+.footer .social-container {
+padding-bottom: 3em;
+}
+
+.footer .social .github:hover {
+    color: #777777;
+}
+
+
