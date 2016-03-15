@@ -15,14 +15,18 @@ var showInsta = function(data) {
  
   var thumbnail = data.images.low_resolution.url;
   var media;
+  var link = data.link;
+  var caption = data.caption.text;
+  var result; 
 
   if (data.type == 'image') {
     media = data.images.standard_resolution.url;
+    result = '<div class="col-md-3 " id="thumb"><a data-gallery="instagram" data-type="image" data-toggle="lightbox" href="' + media + '" data-title="' + caption + '"><img src="' + thumbnail + '"></a></div>';
     } else if (data.type == 'video') {
     media = data.videos.standard_resolution.url;
+    result = '<div class="col-md-3 " id="thumb" ><a data-gallery="instagram" data-toggle="lightbox" href="' + link + '" data-title="' + caption + '"><img src="' + thumbnail + '"</a></div>';
   }
   
-  var result = '<div class="col-md-3" id="thumb"><a href="' + media + '"><img src="' + thumbnail + '"></a></div>'
   return result;
 };
 
@@ -122,6 +126,7 @@ $(document).ready(function() {
     $('body').fadeOut(1500, newpage);
   });
 
+  // Swap portfolio item in DOM
   $('.portfolio-items').on('click', '.portfolio-item', function() {
       event.preventDefault();
       var hashTag = $(this).find('h2').text();
@@ -236,6 +241,14 @@ $(document).ready(function() {
                 console.log(result);
             }, 'json');
         });
+
+        
+
+    $(document).delegate('*[data-toggle="lightbox"]', 'click', function(event) {
+      event.preventDefault();
+      $(this).ekkoLightbox();
+    }); 
+ 
 
 
 
