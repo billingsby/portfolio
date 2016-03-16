@@ -40,11 +40,10 @@ function getInsta() {
   $.ajax({
     url: "https://api.instagram.com/v1/users/self/media/recent/",
     data: parameters,
-    dataType: "jsonp",//use jsonp to avoid cross origin issues
+    dataType: "jsonp",
     type: "GET",
   })
-  .done(function(result){ //this waits for the ajax to return with a succesful promise object
-    console.log(result);
+  .done(function(result){ 
     $.each(result.data, function(i, data) {
       var instaPhoto = showInsta(data);
       
@@ -59,7 +58,7 @@ function getInsta() {
     });
    
   })
-  .fail(function(jqXHR, error){ //this waits for the ajax to return with an error promise object
+  .fail(function(jqXHR, error){ 
     var errorElem = showError(error);
     $('#insta-items').append(errorElem);
   });
@@ -217,48 +216,16 @@ $(document).ready(function() {
                     }
                 }
             },
-             submitButton: '$contact-form button[type="submit"]',
-      submitHandler: function(validator, form, submitButton) {
-      $('#success_message').slideDown({ opacity: "show" }, "slow"); 
-      submitForm();
-      // $('#contact-form').find("input[type=text], textarea").val("");
-      // $('#contact-form').bootstrapValidator().resetForm();
-      
-    }
+            submitButton: '$contact-form button[type="submit"]',
+            submitHandler: function(validator, form, submitButton) {
+              $('#success_message').slideDown({ opacity: "show" }, "slow"); 
+              submitForm();
+            }
         });
-        // .on('success.form.bv', function() {
-       
-          
-        // e.preventDefault(); 
-        // console.log('success');
-        //   $('#success_message').slideDown({ opacity: "show" }, "slow"); // Do something ...
-        //   $('#contact_form').data('bootstrapValidator').resetForm();
-
-            // Get the form instance
-          // var $form = $(e.target);
-
-          //   // Get the BootstrapValidator instance
-          // var bv = $form.data('bootstrapValidator');
-
-          //   // Use Ajax to submit form data
-          // $.post($form.attr('action'), $form.serialize(), function(result) {
-          //   console.log(result);
-          // }, 'json');
-        // };
-
-    // $('#formSubmit').click(function (e) {
-    //   e.preventDefault();
-    //   submitForm();
-    // });
- 
-        
-
+      
     $(document).delegate('*[data-toggle="lightbox"]', 'click', function(event) {
       event.preventDefault();
       $(this).ekkoLightbox();
     }); 
  
-
-
-
 });
