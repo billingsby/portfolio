@@ -7,13 +7,13 @@ function newpage() {
 var offset = $('#header').offset();
 var posY = offset.top - $(window).scrollTop();
 
-$('#myCarousel').carousel({ interval: 3000 });
-$('#myCarousel').carousel({ interval: 1000 });
+$('#myCarousel, #insta-wrapper').carousel({ interval: 5000 });
+
 
 var showInsta = function(data) {
   
  
-  var thumbnail = data.images.low_resolution.url;
+  var thumbnail = data.images.standard_resolution.url;
   var media;
   var link = data.link;
   var caption = data.caption.text;
@@ -87,25 +87,20 @@ if ((/iphone|ipod|ipad.*os 5/gi).test(navigator.appVersion)) {
 // Form Submission
 
 function submitForm(){
+
     // Initiate Variables With Form Content
     var name = $('#name').val();
     var email = $('#email').val();
     var phone = $('#phone').val();
     var message = $('#message').val();
- 
     $.ajax({
         type: "POST",
-        url: "php/form-process.php",
-        data: "name=" + name + "&email=" + email + "&message=" + message,
-        success : function(text){
-            if (text == "success"){
-                formSuccess();
-            }
-        }
+        url: "../php/form-process.php",
+        data: "name=" + name + "&email=" + email + "&phone=" + phone + "&message=" + message
     });
-}
-function formSuccess(){
-    $( "#msgSubmit" ).removeClass( "hidden" );
+    $('#contact-form').data('bootstrapValidator').resetForm();
+    $('#contact-form').find("input[type=text], textarea").val("");
+
 }
 
 
@@ -167,8 +162,8 @@ $(document).ready(function() {
     }
 
     // Contact Form
-
-    $('#contact_form').bootstrapValidator({
+    
+    $('#contact-form').bootstrapValidator({
         // To use feedback icons, ensure that you use Bootstrap v3.1.0 or later
         feedbackIcons: {
             valid: 'glyphicon glyphicon-ok',
@@ -221,27 +216,41 @@ $(document).ready(function() {
                     }
                     }
                 }
-            }
-        })
-        .on('success.form.bv', function(e) {
-            $('#success_message').slideDown({ opacity: "show" }, "slow") // Do something ...
-                $('#contact_form').data('bootstrapValidator').resetForm();
-
-            // Prevent form submission
-            e.preventDefault();
+            },
+             submitButton: '$contact-form button[type="submit"]',
+      submitHandler: function(validator, form, submitButton) {
+      $('#success_message').slideDown({ opacity: "show" }, "slow"); 
+      submitForm();
+      // $('#contact-form').find("input[type=text], textarea").val("");
+      // $('#contact-form').bootstrapValidator().resetForm();
+      
+    }
+        });
+        // .on('success.form.bv', function() {
+       
+          
+        // e.preventDefault(); 
+        // console.log('success');
+        //   $('#success_message').slideDown({ opacity: "show" }, "slow"); // Do something ...
+        //   $('#contact_form').data('bootstrapValidator').resetForm();
 
             // Get the form instance
-            var $form = $(e.target);
+          // var $form = $(e.target);
 
-            // Get the BootstrapValidator instance
-            var bv = $form.data('bootstrapValidator');
+          //   // Get the BootstrapValidator instance
+          // var bv = $form.data('bootstrapValidator');
 
-            // Use Ajax to submit form data
-            $.post($form.attr('action'), $form.serialize(), function(result) {
-                console.log(result);
-            }, 'json');
-        });
+          //   // Use Ajax to submit form data
+          // $.post($form.attr('action'), $form.serialize(), function(result) {
+          //   console.log(result);
+          // }, 'json');
+        // };
 
+    // $('#formSubmit').click(function (e) {
+    //   e.preventDefault();
+    //   submitForm();
+    // });
+ 
         
 
     $(document).delegate('*[data-toggle="lightbox"]', 'click', function(event) {
