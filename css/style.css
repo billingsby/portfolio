@@ -111,13 +111,15 @@ body {
   
 }
 
-.icon-circle .fa{ 
+.icon-circle, .info-circle .fa{ 
   border-radius: 50%;
   width: 1.5em;
   height: 1.5em;
   line-height: 1.5em;
   /*padding: .25em;*/
 }
+
+
 
 .social .icons > li {
   padding-right: 5px;
@@ -309,13 +311,13 @@ a.expand {
   color: #fff;
 }
 
-.portfolio-items .fa-play-circle-o {
+.portfolio-items .fa-play-circle-o, .fa-info-circle {
   margin-left: 38%;
   padding-bottom: .25em;
   color: #145D85;
 }
 
-.portfolio-items .fa-play-circle-o:hover {
+.portfolio-items .fa-play-circle-o:hover, .fa-info-circle:hover {
   color: white;
 }
 
