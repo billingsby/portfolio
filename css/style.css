@@ -27,7 +27,12 @@ body {
 .jumbotron {
   padding: 0;
   margin:0;
+}
 
+.vcenter {
+  display: inline-block;
+  vertical-align: middle;
+  float: none;
 }
 
 #header {
@@ -91,7 +96,7 @@ body {
 }
 
 .video:hover .work-title, .web:hover .work-title {
-   border: 1px solid #333333;
+  colocolorborder: 1px solid #333333;
   border-radius: 3px;
 }
 
@@ -111,7 +116,7 @@ body {
   
 }
 
-.icon-circle, .info-circle .fa{ 
+.icon-circle .fa{ 
   border-radius: 50%;
   width: 1.5em;
   height: 1.5em;
@@ -337,6 +342,67 @@ a.expand {
 #hover-effect .portfolio-item.hover .portfolio-description {
   height: 100%;
 }
+
+.mockup {
+  width: 90%;
+  margin: 8em 2em;
+  vertical-align: middle;
+}
+
+#project-image {
+  width: 100%;
+
+}
+
+
+.project-content {
+
+
+  
+}
+
+.project-title {
+  
+}
+
+.project-tags {
+  color:#b2c6cd;
+  font-size:1.1rem;
+  font-weight:700;
+  letter-spacing:1px;
+  text-transform:uppercase;
+  padding-left: 0;
+}
+
+.project-tags:before {
+  content:"\2022";
+  margin-right:4px;
+  color:#145D85;
+  font-size:1.8rem;
+}
+/*
+.project-tags ul {
+  margin-left: 0;
+}*/
+
+.project-tags li {
+  display:inline;
+}
+
+.project-tags li:last-child:after {
+  content:"";
+}
+
+.project-tags li:after {
+  content:",";
+}
+
+#visit-site { 
+  text-align: center;
+  margin-top: 1.5em;
+}
+
+
 
 
 /* Instagram Slider */
