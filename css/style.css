@@ -255,6 +255,13 @@ body {
 
 }
 
+.web-wrapper {
+  width: 80%;
+  margin:0 auto;
+  padding: 3em 5em;
+  background-color: #ffffff;
+}
+
 
 
 #portfolio .portfolio-item {
@@ -345,8 +352,8 @@ a.expand {
 
 .mockup {
   width: 90%;
-  margin: 8em 2em;
-  vertical-align: middle;
+  margin: 5em auto 0em auto;
+ /* vertical-align: middle;*/
 }
 
 #project-image {
@@ -356,8 +363,7 @@ a.expand {
 
 
 .project-content {
-
-
+  margin: 5em auto 4em auto;
   
 }
 

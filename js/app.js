@@ -124,11 +124,27 @@ $(document).ready(function() {
   $('.portfolio-items').on('click', '.portfolio-item', function() {
       event.preventDefault();
       var hashTag = $(this).find('h2').text();
-      var video = $(this).find('a').attr('src');
+      var project = $(this).find('a').attr('src');
       
       $('.hash-font').text(hashTag);
-      $('#video').attr('src', video);
+      $('#project').attr('src', project);
+      $.get( project, function( data ) {
+      
+      $( '#result' ).html( data );
+        alert( "Load was performed." );
+      });
   })
+
+  // function getProjectPage() {
+  //   $.get( project, function( data ) {
+      
+  //     $( '#result' ).html( data );
+  //       alert( "Load was performed." );
+  //     });
+
+  // }
+
+ 
 
   // Portfolio Hover Effect
 
