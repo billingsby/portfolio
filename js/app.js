@@ -125,26 +125,16 @@ $(document).ready(function() {
       event.preventDefault();
       var hashTag = $(this).find('h2').text();
       var project = $(this).find('a').attr('src');
+      var webProject = "pages/" + project;
       
       $('.hash-font').text(hashTag);
       $('#project').attr('src', project);
-      $.get( project, function( data ) {
       
-      $( '#result' ).html( data );
-        alert( "Load was performed." );
+      $.get(webProject, function( data ) {
+        $('#result').css("display", "none");
+        $('#result').fadeIn(1000).html(data);
       });
   })
-
-  // function getProjectPage() {
-  //   $.get( project, function( data ) {
-      
-  //     $( '#result' ).html( data );
-  //       alert( "Load was performed." );
-  //     });
-
-  // }
-
- 
 
   // Portfolio Hover Effect
 
