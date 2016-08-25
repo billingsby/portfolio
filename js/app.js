@@ -130,7 +130,7 @@ $(document).ready(function() {
       $('.hash-font').text(hashTag);
       $('#project').attr('src', project);
       
-      $.get(webProject, function( data ) {
+      $.get(project, function( data ) {
         $('#result').css("display", "none");
         $('#result').fadeIn(1000).html(data);
       });
