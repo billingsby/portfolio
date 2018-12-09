@@ -1,0 +1,32 @@
+#header {
+  position: absolute;
+  width: 100%;
+  z-index: 999;
+}
+
+
+.landing-bg {
+  background: url('../images/profile_image.png') no-repeat;
+  background-size: auto 40vw;
+  background-position: center;
+}
+
+
+.logo-container, .social-container {
+  padding: 0;
+}
+
+.logo {
+  background-color: #fff;
+  border-radius: 4px;
+  width: 9vw;
+  margin: 0;
+  margin-top: -4px;
+}
+
+.logo img {
+  width: 90%;
+  height: 90%;
+  padding: 1vw;
+  margin: .25vw 0;
+}
