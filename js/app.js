@@ -103,11 +103,9 @@ function submitForm(){
 }
 
 
-$(document).ready(function() {
+$(document).ready(() => {
 
-  $('body').css('display', 'none');
-
-  $('body').fadeIn(1000);
+ $('body').css('display', 'none').fadeIn(500);
 
   getInsta();
 
