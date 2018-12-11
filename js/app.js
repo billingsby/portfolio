@@ -103,20 +103,20 @@ function submitForm(){
 }
 
 
-$(document).ready(() => {
+$(document).ready(function() {
 
- $('body').css('display', 'none').fadeIn(500);
+  $('body').css('display', 'none').fadeIn(500);
 
   getInsta();
 
-  $('.video .web').click(function() {
+  $('.video .web').click(() => {
 
     event.preventDefault();
 
     newLocation = this.href;
+  })
 
-    $('body').fadeOut(1500, newpage);
-  });
+});
 
   // Swap portfolio item in DOM
   $('.portfolio-items').on('click', '.portfolio-item', function() {
