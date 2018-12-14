@@ -1,8 +1,10 @@
 @import '_variables.scss';
 @import '_mixins.scss';
+@import '_aboutme.scss';
 @import '_portfolio.scss';
+@import '_header.scss';
 @import '../node_modules/bootstrap-sass/assets/stylesheets/_bootstrap.scss';
-@import url('https://fonts.googleapis.com/css?family=Titillium+Web');
+
 
 *, *:before, *:after {
   box-sizing: inherit;
@@ -48,11 +50,6 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
   font-weight: 700;
 }
-
-
-
-
-
 
 .mockup {
   width: 90%;
@@ -152,130 +149,6 @@ hr.star-primary:after {
   margin: 0 auto;
 }
 
-header {
-  text-align: center;
-  background: $theme-success;
-  color: white;
-  .container {
-    padding-top: 100px;
-    padding-bottom: 50px;
-  }
-  img {
-    display: block;
-    margin: 0 auto 20px;
-  }
-  .intro-text {
-    .name {
-      display: block;
-      font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-      text-transform: uppercase;
-      font-weight: 700;
-      font-size: 2em;
-    }
-    .skills {
-      font-size: 1.25em;
-      font-weight: 300;
-    }
-  }
-}
-
-@media(min-width:768px) {
-  header {
-    .container {
-      padding-top: 200px;
-      padding-bottom: 100px;
-    }
-    .intro-text {
-      .name {
-        font-size: 4.75em;
-      }
-      .skills {
-        font-size: 1.75em;
-      }
-    }
-  }
-}
-
-.navbar-custom {
-  background: $theme-primary;
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  text-transform: uppercase;
-  font-weight: 700;
-  border: none;
-  a:focus {
-    outline: none;
-  }
-  .navbar-brand {
-    color: white;
-    &:hover,
-    &:focus,
-    &:active,
-    &.active {
-      color: white;
-    }
-  }
-  .navbar-nav {
-    letter-spacing: 1px;
-    li {
-      a {
-        color: white;
-        &:hover {
-          color: $theme-success;
-          outline: none;
-        }
-        &:focus,
-        &:active {
-          color: white;
-        }
-      }
-      &.active {
-        a {
-          color: white;
-          background: $theme-success;
-          &:hover,
-          &:focus,
-          &:active {
-            color: white;
-            background: $theme-success;
-          }
-        }
-      }
-    }
-  }
-  .navbar-toggle {
-    color: white;
-    text-transform: uppercase;
-    font-size: 10px;
-    border-color: white;
-    &:hover,
-    &:focus {
-      background-color: $theme-success;
-      color: white;
-      border-color: $theme-success;
-    }
-  }
-}
-
-@media(min-width:768px) {
-    .navbar-custom {
-        padding: 25px 0;
-        -webkit-transition: padding 0.3s;
-        -moz-transition: padding 0.3s;
-        transition: padding 0.3s;
-      .navbar-brand {
-          font-size: 2em;
-          -webkit-transition: all 0.3s;
-          -moz-transition: all 0.3s;
-          transition: all 0.3s;
-      }
-    }
-    .navbar-custom.affix {
-        padding: 10px 0;
-    .navbar-brand {
-          font-size: 1.5em;
-      }
-  }
-}
 
 section {
     padding: 100px 0;
@@ -499,7 +372,7 @@ footer {
 
 /* About Section */
 
-/*.about {
+.about {
   background: url('../images/black-bg.png') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -558,7 +431,7 @@ footer {
 .about .years h1 {
   font-size: 12vw;
   margin-bottom:0;
-}*/
+}
 
 
 
