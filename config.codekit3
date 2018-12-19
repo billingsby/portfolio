@@ -9,6 +9,34 @@
 	],
 "creatorBuild": "28905",
 "files": {
+	"/.eslintrc-min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/.eslintrc-min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/.eslintrc.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/.eslintrc-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/.eslintrc.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/.eslintrc-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
 	"/.gitignore": {
 		"cB": 0,
 		"ft": 8192,
@@ -31,6 +59,44 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "/favicon.ico",
+		"oF": 0
+		},
+	"/fonts/bootstrap/glyphicons-halflings-regular.eot": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/fonts/bootstrap/glyphicons-halflings-regular.eot",
+		"oF": 0
+		},
+	"/fonts/bootstrap/glyphicons-halflings-regular.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/fonts/bootstrap/glyphicons-halflings-regular.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/fonts/bootstrap/glyphicons-halflings-regular.ttf": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/fonts/bootstrap/glyphicons-halflings-regular.ttf",
+		"oF": 0
+		},
+	"/fonts/bootstrap/glyphicons-halflings-regular.woff": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/fonts/bootstrap/glyphicons-halflings-regular.woff",
+		"oF": 0
+		},
+	"/fonts/bootstrap/glyphicons-halflings-regular.woff2": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/fonts/bootstrap/glyphicons-halflings-regular.woff2",
 		"oF": 0
 		},
 	"/Gulpfile.js": {
@@ -402,6 +468,16 @@
 		"mi": 1,
 		"oA": 0,
 		"oAP": "/js/freelancer-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/js/modernizr-custom.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/js/modernizr-custom-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
