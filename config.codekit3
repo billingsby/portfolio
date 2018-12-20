@@ -515,19 +515,6 @@
 		"oAP": "/build/node_modules",
 		"oF": 0
 		},
-	"/node_modules/bootstrap-sass/assets/stylesheets/_bootstrap.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/node_modules/bootstrap-sass/assets/stylesheets/_bootstrap.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
 	"/node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_alerts.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -1484,19 +1471,6 @@
 		"oA": 0,
 		"oAP": "/pages/youtubevideos.html",
 		"oF": 0
-		},
-	"/sass/_aboutme.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/sass/_aboutme.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
 		},
 	"/sass/_header.scss": {
 		"aP": 0,

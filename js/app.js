@@ -1,11 +1,12 @@
-var showInsta = function(data) {
+
+const showInsta = function(data) {
   
  
-  var thumbnail = data.images.standard_resolution.url;
-  var media;
-  var link = data.link;
-  var caption = data.caption.text;
-  var result; 
+  let thumbnail = data.images.thumbnail.url;
+  let media;
+  let link = data.link;
+  let caption = data.caption.text;
+  let result; 
 
   if (data.type == 'image') {
     media = data.images.standard_resolution.url;
@@ -20,52 +21,37 @@ var showInsta = function(data) {
 
 function getInsta() {
 
-  var feed = new Instafeed({
-        get: 'tagged',
-        tagName: 'awesome',
-        clientId: 'e7dc08a48f4340258d16fef5ebf5f836'
+  var parameters = { 
+    access_token: '14109436.e7dc08a.229017696b99497da17a15bbcf28aa89',
+    count: 12
+  };
+  
+  $.ajax({
+    url: 'https://api.instagram.com/v1/users/self/media/recent',
+    data: parameters,
+    dataType: 'jsonp',
+    type: 'GET'
+  })
+  .done(function(result){ 
+    $.each(result.data, function(i, data) {
+      var instaPhoto = showInsta(data);
+      console.log(data);
+      if (i < 4) {
+        $('#insta-items').append(instaPhoto);
+      } else if (i < 8) {
+        $('#insta-items-2').append(instaPhoto);
+      } else if (i < 12) {
+        $('#insta-items-3').append(instaPhoto);
+      }
+
     });
-    feed.run();
-  
-
-  // var userFeed = new Instafeed({
-  //   get: 'user',
-  //   userId: '14109436',
-  //   accessToken: '14109436.1677ed0.6766c773b72749588fcdefa86020f837'
-  // });
-  // userFeed.run();
-
-  // var parameters = { 
-  //   access_token: '14109436.1677ed0.6766c773b72749588fcdefa86020f837',
-  //   count: 12
-  // };
-  
-  // $.ajax({
-  //   url: 'https://api.instagram.com/v1/self/media/recent',
-  //   data: parameters,
-  //   dataType: 'jsonp',
-  //   type: 'GET'
-  // })
-  // .done(function(result){ 
-  //   $.each(result.data, function(i, data) {
-  //     var instaPhoto = showInsta(data);
-      
-  //     if (i < 4) {
-  //       $('#insta-items').append(instaPhoto);
-  //     } else if (i < 8) {
-  //       $('#insta-items-2').append(instaPhoto);
-  //     } else if (i < 12) {
-  //       $('#insta-items-3').append(instaPhoto);
-  //     }
-
-  //   });
    
-  // })
-  // .fail(function(jqXHR, textStatus, errorThrown){ 
-  //   alert (errorThrown);
-  //   // var errorElem = showError(error);
-  //   // $('#insta-items').append(errorElem);
-  // });
+  })
+  .fail(function(jqXHR, textStatus, errorThrown){ 
+    alert (errorThrown);
+    // var errorElem = showError(error);
+    // $('#insta-items').append(errorElem);
+  });
 }
 
 //Form Submission
@@ -148,7 +134,7 @@ $(document).ready(function() {
 
     // Contact Form
     
-  $('#contact-form').bootstrapValidator({
+  $('#contact-form').Validator({
     feedbackIcons: {
       valid: 'glyphicon glyphicon-ok',
       invalid: 'glyphicon glyphicon-remove',

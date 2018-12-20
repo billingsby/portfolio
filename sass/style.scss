@@ -1,9 +1,8 @@
 @import '_variables.scss';
 @import '_mixins.scss';
-@import '_aboutme.scss';
 @import '_portfolio.scss';
 @import '_header.scss';
-@import '../node_modules/bootstrap-sass/assets/stylesheets/_bootstrap.scss';
+/*@import '../node_modules/bootstrap-sass/assets/stylesheets/_bootstrap.scss';*/
 
 
 *, *:before, *:after {
@@ -381,58 +380,57 @@ footer {
   margin: 0;
   padding: 0;
   color: white;
-}
 
-.about .section-title h3 {
+  .section-title h3 {
   color: white;
-}
+  }
 
-.about h1 {
+  h1 {
   font-size: 15vw;
   font-weight: 900;
   color: white;
-}
+  }
 
-.about p {
+  .p {
   padding-right: 10em;
 
-}
+  }
 
-.about #experience {
+  #experience {
   padding-right: 2em;
   margin-bottom: 5em;
-}
+  
 
-.about #experience h3 {
-  color: #777777;
-  font-size: 2vw;
-  padding-left: 5em;
+    .h3 {
+    color: #777777;
+    font-size: 2vw;
+    padding-left: 5em;
+    }
+  }
 
-}
-
-.about .line {
+  .line {
   border-top: 3px solid white;
-}
+  }
 
-.about .years-description {
-  margin: 0 auto;
+  .years-description {
+    font-size: 2vw;
+    margin: 0 auto;
+  }
 
-}
-
-.about #experience {
+  #experience {
   padding-left: 5em;
-}
+  }
 
-.about #breakdown {
+  #breakdown {
   padding-left: 5em;
   margin-top: 3em;
-}
+  }
 
-.about .years h1 {
-  font-size: 12vw;
+  .years h1 {
+  font-size: 8vw;
   margin-bottom:0;
+  }
 }
-
 
 
 
